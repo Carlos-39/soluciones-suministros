@@ -1,0 +1,15 @@
+  /* ---------- Botones ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:13px 24px;border-radius:999px;
+    font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;
+    border:2px solid transparent;transition:transform .18s, box-shadow .18s, background .18s;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn-magenta{background:var(--magenta);color:#fff;box-shadow:0 4px 14px rgba(236,20,103,.22)}
+  .btn-magenta:hover{transform:translateY(-2px);box-shadow:0 7px 20px rgba(236,20,103,.3)}
+  .btn-outline{border-color:var(--navy);color:var(--navy);background:transparent}
+  .btn-outline:hover{background:var(--navy);color:#fff}
+  .btn-wa{background:#25D366;color:#08331a;padding:10px 18px;font-size:14px}
+  .btn-wa:hover{transform:translateY(-1px)}
+  .btn svg{flex:none}

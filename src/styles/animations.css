@@ -1,0 +1,12 @@
+  /* ---------- Animaciones de aparición al hacer scroll ---------- */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.visible{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+
+  /* Foco visible para teclado */
+  a:focus-visible,button:focus-visible,input:focus-visible,.chip:focus-visible{
+    outline:3px solid var(--cian);outline-offset:2px;
+  }

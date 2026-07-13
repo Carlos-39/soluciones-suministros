@@ -1,0 +1,15 @@
+  /* ---------- Fuentes: Archivo (display/body) + Space Mono (números de metraje) ---------- */
+
+  :root{
+    /* Paleta de marca */
+    --magenta:#EC1467;
+    --azul:#1857D6;
+    --amarillo:#FFC72C;
+    --cian:#22B8CF;
+    --navy:#0B1A45;
+    --crudo:#FBFAF6;        /* fondo off-white, como tela sin imprimir */
+    --crudo-2:#F2EFE7;
+    --tinta-suave:rgba(11,26,69,.62);
+    --radius:14px;
+    --maxw:1180px;
+  }

@@ -1,0 +1,8 @@
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy);color:rgba(251,250,246,.72);padding:72px 0 32px;border-top:1px solid rgba(236,20,103,.4)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px}
+  footer h4{color:#fff;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;font-family:'Space Mono',monospace}
+  footer p, footer a{font-size:14.5px;color:rgba(251,250,246,.75);text-decoration:none;display:block;margin-bottom:8px}
+  footer a:hover{color:var(--amarillo)}
+  .foot-bottom{margin-top:48px;padding-top:20px;border-top:1px solid rgba(251,250,246,.12);
+    display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:11.5px;color:rgba(251,250,246,.4)}

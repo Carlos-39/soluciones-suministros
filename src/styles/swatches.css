@@ -1,0 +1,18 @@
+  /* ---------- DIFERENCIADORES: tarjetas-muestra de tela ---------- */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .swatch{
+    background:#fff;border-radius:var(--radius);padding:0;overflow:hidden;
+    border:1px solid rgba(11,26,69,.08);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position:relative;
+  }
+  .swatch:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,26,69,.08)}
+  .swatch-color{height:5px} /* línea fina de color: la muestra, en versión sobria */
+  .swatch-body{padding:28px 26px 30px}
+  .swatch h3{font-size:18px;margin-bottom:10px}
+  .swatch p{font-size:14.5px;color:var(--tinta-suave)}
+  .swatch .ref{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:rgba(11,26,69,.4);display:block;margin-bottom:8px}
+
+  .sec-head{max-width:640px;margin-bottom:52px}
+  .sec-head h2{font-size:clamp(30px,3.4vw,44px);margin-bottom:16px;letter-spacing:-.025em}
+  .sec-head p{color:var(--tinta-suave);font-size:17px}

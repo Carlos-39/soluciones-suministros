@@ -1,0 +1,42 @@
+  /* ---------- SPLIT CTA ---------- */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .split-card{
+    border-radius:22px;padding:52px 44px;position:relative;overflow:hidden;
+    display:flex;flex-direction:column;min-height:400px;
+  }
+  .split-card h3{font-size:clamp(26px,2.8vw,36px);margin:14px 0 14px}
+  .split-card p{font-size:16px;margin-bottom:auto;max-width:44ch}
+  .split-card .btn{margin-top:30px;align-self:flex-start}
+  .card-emprende{ /* tono cercano y aspiracional */
+    background:linear-gradient(140deg, var(--magenta) 0%, #b90f52 60%, #8f0c40 100%);color:#fff;
+  }
+  .card-emprende p{color:rgba(255,255,255,.88)}
+  .card-emprende .eyebrow{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+  .card-emprende .eyebrow::before{background:var(--amarillo)}
+  .card-emprende .btn{background:#fff;color:var(--magenta)}
+  .card-empresa{ /* tono directo, basado en datos */
+    background:var(--navy);color:var(--crudo);
+  }
+  .card-empresa .eyebrow{background:transparent;color:var(--crudo);border-color:rgba(251,250,246,.35)}
+  .card-empresa .eyebrow::before{background:var(--cian)}
+  .card-empresa p{color:rgba(251,250,246,.78)}
+  .card-empresa ul{list-style:none;margin:18px 0 0;font-family:'Space Mono',monospace;font-size:13.5px}
+  .card-empresa ul li{padding:9px 0;border-bottom:1px dashed rgba(251,250,246,.18);display:flex;justify-content:space-between;gap:14px}
+  .card-empresa ul li b{color:var(--cian)}
+  .card-empresa .btn{border-color:var(--cian);color:var(--cian);background:transparent;border:2px solid var(--cian)}
+  .card-empresa .btn:hover{background:var(--cian);color:var(--navy)}
+  /* mancha de tinta decorativa dentro de la card de emprendedores */
+  .mancha{position:absolute;right:-70px;bottom:-70px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle at 35% 35%, rgba(255,199,44,.5), rgba(255,199,44,0) 65%);pointer-events:none}
+
+  /* ---------- BROCHAZOS: pintura real sobre tela (canvas 2D) ---------- */
+  .pinceladas{position:relative;overflow:hidden;background:var(--crudo-2)}
+  #lienzo-brochazos{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .tela-overlay{ /* la trama del tejido, fundida ENCIMA de la pintura: la pintura queda "en la tela" */
+    position:absolute;inset:0;pointer-events:none;mix-blend-mode:overlay;opacity:.5;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,.55) 0 1px, transparent 1px 4px),
+      repeating-linear-gradient(0deg, rgba(11,26,69,.4) 0 1px, transparent 1px 4px);
+  }
+  .pinceladas .container{position:relative;z-index:2}
+  .pinceladas .split-card{box-shadow:0 24px 60px rgba(11,26,69,.16)}

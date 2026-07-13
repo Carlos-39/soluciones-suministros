@@ -1,0 +1,32 @@
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--crudo);
+    color:var(--navy);
+    line-height:1.55;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--amarillo);color:var(--navy)}
+
+  h1,h2,h3{font-weight:800;line-height:1.06;letter-spacing:-.015em}
+  .display{
+    font-variation-settings:'wdth' 118;   /* Archivo expandido: voz de taller / señalización industrial */
+    font-weight:900;
+    text-transform:uppercase;
+  }
+  .mono{font-family:'Space Mono',monospace}
+
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{padding:126px 0}
+
+  /* Etiqueta "eyebrow": imita la etiqueta cosida de una muestra de tela */
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--navy);
+    border:1px dashed rgba(11,26,69,.24);   /* borde punteado = costura */
+    padding:6px 14px;border-radius:999px;background:#fff;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--magenta)}

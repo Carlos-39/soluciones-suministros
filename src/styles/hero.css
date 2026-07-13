@@ -1,0 +1,32 @@
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    padding:150px 0 90px;overflow:hidden;
+  }
+  #tela-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .hero-veil{ /* degradado para legibilidad del texto sobre el 3D */
+    position:absolute;inset:0;
+    background:linear-gradient(100deg, rgba(251,250,246,.99) 0%, rgba(251,250,246,.96) 38%, rgba(251,250,246,.55) 60%, rgba(251,250,246,.08) 78%, rgba(251,250,246,0) 90%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 24px;width:100%}
+  .hero h1{font-size:clamp(42px,6.2vw,84px);max-width:13ch}
+  .hero h1 .hito{color:var(--magenta)} /* la cifra clave, solo en magenta */
+  .hero p.sub{font-size:19px;max-width:52ch;margin:22px 0 34px;color:var(--tinta-suave);font-weight:500}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* Fila de datos con estética de cinta métrica */
+  .stat-row{
+    display:inline-flex;flex-wrap:wrap;margin-top:46px;
+    background:#fff;border:1px solid rgba(11,26,69,.12);border-radius:12px;overflow:hidden;
+    box-shadow:0 4px 18px rgba(11,26,69,.05);
+  }
+  .stat{
+    padding:16px 26px;border-right:1px dashed rgba(11,26,69,.18);
+  }
+  .stat:last-child{border-right:none}
+  .stat b{font-family:'Space Mono',monospace;font-size:20px;display:block;color:var(--navy)}
+  .stat span{font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--tinta-suave);font-weight:600}
+  .stat:nth-child(1) b{color:var(--magenta)}
+  .stat:nth-child(2) b{color:var(--azul)}
+  .stat:nth-child(3) b{color:var(--cian)}

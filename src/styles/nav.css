@@ -1,0 +1,22 @@
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(251,250,246,.86);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(11,26,69,.08);
+  }
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy)}
+  .logo-mark{width:34px;height:34px;flex:none}
+  .logo-text{font-weight:900;font-size:17px;letter-spacing:-.02em}
+  .logo-text small{display:block;font-family:'Space Mono',monospace;font-weight:400;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta-suave)}
+  .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+  .nav-links a{color:var(--navy);text-decoration:none;font-weight:600;font-size:14.5px;position:relative}
+  .nav-links a:not(.btn)::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--magenta);transition:width .25s}
+  .nav-links a:not(.btn):hover::after{width:100%}
+  .menu-toggle{
+    display:none; 
+    background:none; 
+    border:none; 
+    color:var(--navy); 
+    cursor:pointer;
+  }
