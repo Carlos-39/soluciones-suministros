@@ -13,7 +13,7 @@ export function DifferentiatorsSection() {
         <div class="swatch-body">
           <span class="ref">REF · EXPRESS-48</span>
           <h3>Producción express</h3>
-          <p>Tu pedido sale en 8 a 48 horas hábiles. Esa velocidad es tu mayor ventaja competitiva para lanzar antes que nadie.</p>
+          <p>Tu pedido sale en 24 a 48 horas hábiles. Esa velocidad es tu mayor ventaja competitiva para lanzar antes que nadie.</p>
         </div>
       </article>
       <article class="swatch reveal">

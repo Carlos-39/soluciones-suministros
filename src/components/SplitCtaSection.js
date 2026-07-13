@@ -20,7 +20,7 @@ export function SplitCtaSection() {
         <h3 class="display">Capacidad extra,<br>cuando la necesitas</h3>
         <p>El aliado de producción para picos de demanda y reposiciones urgentes. Ejecución impecable, discreción total y consistencia de calidad en altos volúmenes.</p>
         <ul>
-          <li>Entrega hábil <b>8–48 horas</b></li>
+          <li>Entrega hábil <b>24–48 horas</b></li>
           <li>Tarifa 100m+ <b>$7.000 / metro</b></li>
           <li>Fidelidad de color entre tirajes <b>garantizada</b></li>
           <li>Reposición programada <b>disponible</b></li>

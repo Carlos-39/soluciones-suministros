@@ -23,7 +23,7 @@ export function ProcessSection() {
               <span class="num">PASO 03 / 04</span>
               <h3>Producimos en tiempo récord</h3>
               <p>Impresión industrial garantizada en nuestra planta de San Nicolás.</p>
-              <span class="tag-tiempo">⏱ 8–48 horas hábiles</span>
+              <span class="tag-tiempo">⏱ 24–48 horas hábiles</span>
             </div>
             <div class="paso-slide">
               <span class="num">PASO 04 / 04</span>
@@ -64,7 +64,7 @@ export function ProcessSection() {
                 <path d="M282 152 a15 15 0 0 0-15-15 H119 a15 15 0 0 0-15 15 v52 a15 15 0 0 0 15 15 h113 l24 22 v-22 h11 a15 15 0 0 0 15-15 z" fill="#EC1467"/>
                 <path d="M282 152 a15 15 0 0 0-15-15 H119 a15 15 0 0 0-15 15 v10 c 60 8 120 8 178 0 z" fill="#fff" opacity=".08"/>
                 <text x="122" y="163" font-family="Archivo, sans-serif" font-weight="600" font-size="16" fill="#fff">Claro: $11.000/m,</text>
-                <text x="122" y="183" font-family="Archivo, sans-serif" font-weight="600" font-size="16" fill="#fff">entrega en 8–48h</text>
+                <text x="122" y="183" font-family="Archivo, sans-serif" font-weight="600" font-size="16" fill="#fff">entrega en 24–48h</text>
                 <text x="212" y="209" font-family="Space Mono, monospace" font-size="9" fill="rgba(255,255,255,.75)">10:33</text>
                 <path d="M246 202 l4 5 l8 -9 M256 202 l4 5 l8 -9" stroke="#8AE4F1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="290" cy="132" r="15" fill="#0B1A45"/>
@@ -117,7 +117,7 @@ export function ProcessSection() {
                 <path d="M104 148 c -10 6 -16 16 -14 26" stroke="rgba(11,26,69,.4)" stroke-width="1.6" fill="none"/>
                 <g transform="rotate(6 86 186)">
                   <rect x="62" y="174" width="52" height="24" rx="6" fill="#fff" stroke="rgba(11,26,69,.2)"/>
-                  <text x="70" y="190" font-family="Space Mono, monospace" font-size="10.5" font-weight="700" fill="#EC1467">8–48h ✓</text>
+                  <text x="70" y="190" font-family="Space Mono, monospace" font-size="10.5" font-weight="700" fill="#EC1467">24–48h ✓</text>
                 </g>
               </svg>
             </div>
