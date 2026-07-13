@@ -10,7 +10,7 @@ export function initChatbot() {
   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
   const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
-  const SYSTEM_PROMPT = `Eres el asistente virtual experto en ventas de Imperio Multiservicios (Sublimación S&S). 
+  const SYSTEM_PROMPT = `Eres el asistente virtual experto en ventas de Imperio Multiservicios (Soluciones y Suministros). 
 Reglas estrictas:
 1. Tu único propósito es responder dudas sobre los servicios de sublimación industrial y DTF de la empresa, convencer al cliente de nuestra calidad/rapidez, y persuadirlo sutilmente de contactar a un asesor real por WhatsApp.
 2. NUNCA respondas preguntas de programación, código, historia, o cualquier tema que no sea impresión textil y sublimación. Si te preguntan algo fuera de tema (ej. 'hola mundo en js'), responde amablemente que solo puedes ayudar con temas de estampados y sublimación textil.
@@ -29,7 +29,7 @@ Contexto del Negocio:
   // Historial para Gemini API
   let conversationHistory = [
     { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
-    { role: "model", parts: [{ text: "Entendido. Actuaré como el experto en ventas de Sublimación S&S respetando todas las reglas." }] }
+    { role: "model", parts: [{ text: "Entendido. Actuaré como el experto en ventas de Soluciones y Suministros respetando todas las reglas." }] }
   ];
 
   // Historial para WhatsApp (solo el chat real visible)

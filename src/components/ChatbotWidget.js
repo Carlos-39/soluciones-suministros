@@ -10,7 +10,7 @@ export function ChatbotWidget() {
     <div><b>Asistente S&amp;S</b><small>Responde en segundos · 24/7</small></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="msg bot">¡Hola! 👋 Soy el asistente de Sublimación S&amp;S. Puedo ayudarte con precios, tiempos de entrega y elección de telas. ¿Qué necesitas?</div>
+    <div class="msg bot">¡Hola! 👋 Soy el asistente de Soluciones y Suministros. Puedo ayudarte con precios, tiempos de entrega y elección de telas. ¿Qué necesitas?</div>
   </div>
   <div class="chips" id="chatChips">
     <button class="chip" data-q="precios">💰 ¿Cuánto cuesta?</button>

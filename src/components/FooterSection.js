@@ -11,7 +11,7 @@ export function FooterSection() {
             <circle cx="8" cy="27" r="3.6" fill="#22B8CF"/>
             <circle cx="30" cy="30" r="3" fill="#1857D6"/>
           </svg>
-          <span class="logo-text" style="color:#fff">Sublimación S&amp;S<small style="color:rgba(251,250,246,.5)">Textil · Cali</small></span>
+          <span class="logo-text" style="color:#fff">Soluciones y Suministros<small style="color:rgba(251,250,246,.5)">Textil · Cali</small></span>
         </a>
         <p>Sublimación por metro y DTF textil.<br>Producción express en el corazón de Cali.</p>
       </div>
@@ -31,7 +31,7 @@ export function FooterSection() {
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Sublimación S&amp;S — Cali, Colombia</span>
+      <span>© 2026 Soluciones y Suministros — Cali, Colombia</span>
       <span>PROTOTIPO VISUAL · v1</span>
     </div>
   </div>
