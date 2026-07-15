@@ -8,7 +8,7 @@ export function initChatbot() {
   const transferBtn = document.getElementById('chatTransferWa');
 
   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
   const SYSTEM_PROMPT = `Eres el asistente virtual experto en ventas de Imperio Multiservicios (Soluciones y Suministros). 
 Reglas estrictas:
