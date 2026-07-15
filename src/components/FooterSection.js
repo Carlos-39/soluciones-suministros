@@ -28,6 +28,13 @@ export function FooterSection() {
         <h4>Contacto</h4>
         <a href="https://wa.me/573046669893" target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://www.instagram.com/solucionesysuministrosas?igsh=MTFqbm5peDhvNGNhNg==" target="_blank" rel="noopener">Instagram</a>
+        
+        <div style="margin-top: 1.5rem;">
+          <h4 style="font-size: 0.85rem; margin-bottom: 0.5rem; opacity: 0.7;">Correos</h4>
+          <a href="mailto:administracion@solucionesysuministrosas.com" style="font-size: 0.9rem; margin-bottom: 0.4rem;">administracion@solucionesysuministrosas.com</a>
+          <a href="mailto:dtf@solucionesysuministrosas.com" style="font-size: 0.9rem; margin-bottom: 0.4rem;">dtf@solucionesysuministrosas.com</a>
+          <a href="mailto:sublimacion@solucionesysuministrosas.com" style="font-size: 0.9rem;">sublimacion@solucionesysuministrosas.com</a>
+        </div>
       </div>
     </div>
     <div class="foot-bottom">

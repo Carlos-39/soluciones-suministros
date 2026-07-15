@@ -8,6 +8,7 @@ import { DifferentiatorsSection } from './components/DifferentiatorsSection.js';
 import { PricingSection } from './components/PricingSection.js';
 import { ProcessSection } from './components/ProcessSection.js';
 import { SplitCtaSection } from './components/SplitCtaSection.js';
+import { MapSection } from './components/MapSection.js';
 import { FooterSection } from './components/FooterSection.js';
 import { ChatbotWidget } from './components/ChatbotWidget.js';
 
@@ -19,6 +20,7 @@ import { initPinnedProcess } from './hooks/usePinnedProcess.js';
 import { initBrushstrokes } from './hooks/useBrushstrokes.js';
 import { initRevealOnScroll } from './hooks/useRevealOnScroll.js';
 import { initMobileNav } from './hooks/useMobileNav.js';
+import { initMap3D } from './hooks/useMap3D.js';
 
 // Render components into #app
 const app = document.getElementById('app');
@@ -29,6 +31,7 @@ app.innerHTML = [
   PricingSection(),
   ProcessSection(),
   SplitCtaSection(),
+  MapSection(),
   FooterSection(),
 ].join('');
 
@@ -43,3 +46,4 @@ initBrushstrokes();
 initChatbot();
 initRevealOnScroll();
 initMobileNav();
+initMap3D();
