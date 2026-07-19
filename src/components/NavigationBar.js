@@ -3,14 +3,8 @@ export function NavigationBar() {
 <nav>
   <div class="nav-inner">
     <a class="logo" href="#inicio" aria-label="Soluciones y Suministros — inicio">
-      <!-- Marca: salpicadura de tinta con los 4 colores -->
-      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <circle cx="20" cy="20" r="13" fill="#EC1467"/>
-        <circle cx="31" cy="12" r="4.5" fill="#FFC72C"/>
-        <circle cx="8" cy="27" r="3.6" fill="#22B8CF"/>
-        <circle cx="30" cy="30" r="3" fill="#1857D6"/>
-        <circle cx="12" cy="8" r="2.4" fill="#1857D6"/>
-      </svg>
+      <!-- Marca: Logo suministrado con blend-mode para limpiar fondo blanco -->
+      <img src="/logo.jpg" alt="S Logo" class="logo-mark" style="mix-blend-mode: multiply; border-radius: 6px; object-fit: contain;">
       <span class="logo-text">Soluciones y Suministros<small>Textil · Cali</small></span>
     </a>
     <ul class="nav-links">

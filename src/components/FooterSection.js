@@ -5,12 +5,7 @@ export function FooterSection() {
     <div class="foot-grid">
       <div>
         <a class="logo" href="#inicio" style="margin-bottom:16px">
-          <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <circle cx="20" cy="20" r="13" fill="#EC1467"/>
-            <circle cx="31" cy="12" r="4.5" fill="#FFC72C"/>
-            <circle cx="8" cy="27" r="3.6" fill="#22B8CF"/>
-            <circle cx="30" cy="30" r="3" fill="#1857D6"/>
-          </svg>
+          <img src="/logo.jpg" alt="S Logo" style="width:34px; height:34px; border-radius: 6px; object-fit: contain; background: #fff;">
           <span class="logo-text" style="color:#fff">Soluciones y Suministros<small style="color:rgba(251,250,246,.5)">Textil · Cali</small></span>
         </a>
         <p>Sublimación por metro y DTF textil.<br>Producción express en el corazón de Cali.</p>
@@ -27,7 +22,7 @@ export function FooterSection() {
       <div>
         <h4>Contacto</h4>
         <a href="https://wa.me/573046669893" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.instagram.com/solucionesysuministrosas?igsh=MTFqbm5peDhvNGNhNg==" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.instagram.com/solucionesysuministrosas" target="_blank" rel="noopener">Instagram</a>
         
         <div style="margin-top: 1.5rem;">
           <h4 style="font-size: 0.85rem; margin-bottom: 0.5rem; opacity: 0.7;">Correos</h4>
