@@ -5,6 +5,7 @@ import './styles/index.css';
 import { NavigationBar } from './components/NavigationBar.js';
 import { HeroSection } from './components/HeroSection.js';
 import { DifferentiatorsSection } from './components/DifferentiatorsSection.js';
+import { CatalogSection } from './components/CatalogSection.js';
 import { PricingSection } from './components/PricingSection.js';
 import { ProcessSection } from './components/ProcessSection.js';
 import { SplitCtaSection } from './components/SplitCtaSection.js';
@@ -19,6 +20,7 @@ import { initChatbot } from './hooks/useChatbot.js';
 import { initPinnedProcess } from './hooks/usePinnedProcess.js';
 import { initBrushstrokes } from './hooks/useBrushstrokes.js';
 import { initRevealOnScroll } from './hooks/useRevealOnScroll.js';
+import { initCatalog } from './hooks/useCatalog.js';
 import { initMobileNav } from './hooks/useMobileNav.js';
 import { initMap3D } from './hooks/useMap3D.js';
 
@@ -28,6 +30,7 @@ app.innerHTML = [
   NavigationBar(),
   HeroSection(),
   DifferentiatorsSection(),
+  CatalogSection(),
   PricingSection(),
   ProcessSection(),
   SplitCtaSection(),
@@ -45,5 +48,6 @@ initPinnedProcess();
 initBrushstrokes();
 initChatbot();
 initRevealOnScroll();
+initCatalog();
 initMobileNav();
 initMap3D();

@@ -9,6 +9,7 @@ export function NavigationBar() {
     </a>
     <ul class="nav-links">
       <li><a href="#ventajas">Ventajas</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#precios">Precios</a></li>
       <li><a href="#proceso">Proceso</a></li>
       <li class="cta-li">
