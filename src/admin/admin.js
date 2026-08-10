@@ -97,6 +97,13 @@ async function loadGallery() {
         <button class="del" title="Eliminar" aria-label="Eliminar foto">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2m2 0v14a1 1 0 01-1 1H7a1 1 0 01-1-1V6"/></svg>
         </button>
+        <div class="confirm">
+          <p>¿Eliminar esta foto?</p>
+          <div class="row">
+            <button class="c-yes" type="button">Sí, eliminar</button>
+            <button class="c-no" type="button">Cancelar</button>
+          </div>
+        </div>
       </div>`
       )
       .join('');
@@ -107,20 +114,43 @@ async function loadGallery() {
 }
 
 gallery.addEventListener('click', async (e) => {
-  const btn = e.target.closest('.del');
-  if (!btn) return;
-  const item = btn.closest('.gitem');
-  const name = decodeURIComponent(item.dataset.name);
-  if (!confirm('¿Eliminar esta foto del catálogo?')) return;
-  btn.disabled = true;
-  try {
-    await deleteImage(name, token);
-    item.remove();
-    msg(uploadMsg, 'Foto eliminada.', 'info');
-    loadGallery();
-  } catch (err) {
-    msg(uploadMsg, 'No se pudo eliminar. ¿Sesión vencida? Vuelve a entrar.', 'err');
-    console.error(err);
+  const item = e.target.closest('.gitem');
+  if (!item) return;
+
+  // Mostrar la confirmación dentro de la tarjeta
+  if (e.target.closest('.del')) {
+    // Cierra cualquier otra confirmación abierta
+    gallery.querySelectorAll('.gitem.confirming').forEach((g) => {
+      if (g !== item) g.classList.remove('confirming');
+    });
+    item.classList.add('confirming');
+    return;
+  }
+
+  // Cancelar
+  if (e.target.closest('.c-no')) {
+    item.classList.remove('confirming');
+    return;
+  }
+
+  // Confirmar borrado
+  const yes = e.target.closest('.c-yes');
+  if (yes) {
+    const name = decodeURIComponent(item.dataset.name);
+    yes.disabled = true;
+    yes.textContent = 'Eliminando…';
+    try {
+      await deleteImage(name, token);
+      item.remove();
+      msg(uploadMsg, 'Foto eliminada.', 'info');
+      loadGallery();
+    } catch (err) {
+      msg(uploadMsg, 'No se pudo eliminar. ¿Sesión vencida? Vuelve a entrar.', 'err');
+      console.error(err);
+      item.classList.remove('confirming');
+      yes.disabled = false;
+      yes.textContent = 'Sí, eliminar';
+    }
   }
 });
 
