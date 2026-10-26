@@ -11,7 +11,7 @@ export function SplitCtaSection() {
         <div class="mancha"></div>
         <h3 class="display">Tu marca empieza<br>con un metro</h3>
         <p>No necesitas bodegas llenas para lanzar tu línea. Imprime tu primera colección pequeña hoy, pruébala en el mercado este fin de semana y repite lo que se venda. Nosotros ponemos la velocidad industrial; tú pones la idea.</p>
-        <a class="btn" href="https://wa.me/573046669893" target="_blank" rel="noopener">Lanza tu marca por WhatsApp
+        <a class="btn" href="https://wa.me/573189201488" target="_blank" rel="noopener">Lanza tu marca por WhatsApp
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
@@ -25,7 +25,7 @@ export function SplitCtaSection() {
           <li>Fidelidad de color entre tirajes <b>garantizada</b></li>
           <li>Reposición programada <b>disponible</b></li>
         </ul>
-        <a class="btn" href="https://wa.me/573046669893" target="_blank" rel="noopener">Solicitar cotización empresarial</a>
+        <a class="btn" href="https://wa.me/573189201488" target="_blank" rel="noopener">Solicitar cotización empresarial</a>
       </div>
     </div>
   </div>

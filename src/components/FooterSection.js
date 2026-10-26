@@ -21,7 +21,7 @@ export function FooterSection() {
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="https://wa.me/573046669893" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/573189201488" target="_blank" rel="noopener">WhatsApp</a>
         <a href="https://www.instagram.com/solucionesysuministrosas" target="_blank" rel="noopener">Instagram</a>
         
         <div style="margin-top: 1.5rem;">

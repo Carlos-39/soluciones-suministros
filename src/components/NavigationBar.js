@@ -13,7 +13,7 @@ export function NavigationBar() {
       <li><a href="#precios">Precios</a></li>
       <li><a href="#proceso">Proceso</a></li>
       <li class="cta-li">
-        <a class="btn btn-wa" href="https://wa.me/573046669893" target="_blank" rel="noopener">
+        <a class="btn btn-wa" href="https://wa.me/573189201488" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.5.4.1.1.1.6-.1 1z"/></svg>
           WhatsApp
         </a>

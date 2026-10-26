@@ -136,7 +136,7 @@ Contexto del Negocio:
 
   if (transferBtn) {
     transferBtn.addEventListener('click', () => {
-      const waNumber = '573046669893';
+      const waNumber = '573189201488';
       const preamble = "¡Hola! Estuve hablando con su asistente virtual y quiero continuar la conversación. Aquí les comparto mi consulta:\n\n---\n";
       const textToWa = encodeURIComponent(preamble + chatLogText.join('\n'));
       window.open(`https://wa.me/${waNumber}?text=${textToWa}`, '_blank', 'noopener');

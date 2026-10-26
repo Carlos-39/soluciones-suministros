@@ -24,7 +24,7 @@ export function PricingSection() {
         <div class="campo"><span>Metraje</span><b id="outMetros">25 m</b></div>
         <div class="campo"><span>Precio por metro</span><b id="outPorMetro">$11.000</b></div>
         <div class="campo total"><span>Total estimado</span><b id="outTotal">$275.000 COP</b></div>
-        <a class="btn btn-magenta" href="https://wa.me/573046669893" target="_blank" rel="noopener">Cotizar este metraje</a>
+        <a class="btn btn-magenta" href="https://wa.me/573189201488" target="_blank" rel="noopener">Cotizar este metraje</a>
       </div>
       <p class="nota-precio">* Precios de referencia por metro lineal de sublimación. DTF y acabados especiales se cotizan por WhatsApp. Prototipo con datos reales de tarifa.</p>
     </div>
