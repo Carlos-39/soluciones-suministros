@@ -86,14 +86,28 @@ export async function listImages() {
 // --- Autenticación del panel de administración ------------------------------
 
 export async function signIn(email, password) {
-  const res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY },
-    body: JSON.stringify({ email, password }),
-  });
-  const data = await res.json();
+  let res;
+  try {
+    res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_ANON_KEY },
+      body: JSON.stringify({ email, password }),
+    });
+  } catch (e) {
+    // La petición no llegó: sin internet o el proyecto Supabase está dormido/caído.
+    const err = new Error('No se pudo conectar con el servidor');
+    err.code = 'network';
+    throw err;
+  }
+
+  let data = {};
+  try { data = await res.json(); } catch { /* respuesta sin cuerpo JSON */ }
+
   if (!res.ok) {
-    throw new Error(data.error_description || data.msg || 'No se pudo iniciar sesión');
+    const err = new Error(data.error_description || data.msg || 'No se pudo iniciar sesión');
+    // 400 = credenciales inválidas; otros códigos = problema del servidor.
+    err.code = res.status === 400 ? 'credentials' : 'server';
+    throw err;
   }
   return data.access_token;
 }

@@ -1,0 +1,39 @@
+name: Supabase keep-alive
+
+# Mantiene "despierto" el proyecto gratis de Supabase para que no se pause por
+# inactividad (el plan gratis pausa el proyecto tras ~7 días sin peticiones).
+# Hace un ping diario a la API; es gratis y tarda segundos.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # cada día a las 06:00 UTC (~01:00 Colombia)
+  workflow_dispatch:        # permite ejecutarlo a mano desde la pestaña "Actions"
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase (REST + Storage)
+        run: |
+          URL="https://mzqzyymdtujpzsuuhwsv.supabase.co"
+          # La anon key es PÚBLICA por diseño (protegida por RLS); no es un secreto,
+          # ya va embebida en el sitio publicado. Por eso puede ir aquí directa.
+          KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16cXp5eW1kdHVqcHpzdXVod3N2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYzMjQwMTcsImV4cCI6MjEwMTkwMDAxN30.G54aUO7fb4ZVlZtvJIObf0MzWwSehxnt4he-cU_k5PI"
+
+          echo "Ping REST:"
+          code_rest=$(curl -s -o /dev/null -w "%{http_code}" "$URL/rest/v1/" -H "apikey: $KEY")
+          echo "  HTTP $code_rest"
+
+          echo "Ping Storage (bucket catalogo):"
+          code_sto=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$URL/storage/v1/object/list/catalogo" \
+            -H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json" \
+            -d '{"prefix":"","limit":1}')
+          echo "  HTTP $code_sto"
+
+          # Si ambas respuestas son de error de red/servidor (000), fallar para que
+          # GitHub avise; cualquier 2xx/4xx significa que el proyecto está vivo.
+          if [ "$code_rest" = "000" ] && [ "$code_sto" = "000" ]; then
+            echo "El proyecto no respondió (puede estar pausado). Restáuralo en supabase.com."
+            exit 1
+          fi
+          echo "Proyecto activo. ✅"

@@ -69,7 +69,11 @@ loginForm.addEventListener('submit', async (e) => {
     sessionStorage.setItem(SESSION_KEY, token);
     enterPanel();
   } catch (err) {
-    msg(loginMsg, 'Correo o contraseña incorrectos. Intenta de nuevo.', 'err');
+    if (err.code === 'network' || err.code === 'server') {
+      msg(loginMsg, 'No se pudo conectar con el servidor. Puede estar iniciando tras una pausa; espera un momento y vuelve a intentar.', 'err');
+    } else {
+      msg(loginMsg, 'Correo o contraseña incorrectos. Intenta de nuevo.', 'err');
+    }
     console.error(err);
   } finally {
     loginBtn.disabled = false;
